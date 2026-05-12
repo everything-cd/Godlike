@@ -7,7 +7,9 @@ on:
         description: '指定ID（留空运行全部）'
         required: false
         default: ''
-
+  schedule:
+    - cron: '0 */6 * * *'   # 每隔6小时运行一次
+    
 permissions:
   actions: write
   contents: read
